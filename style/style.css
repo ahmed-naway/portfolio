@@ -1,0 +1,776 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /*font-family: 'Roboto', sans-serif;
+    font-family: 'Grand Hotel', cursive;*/
+}
+
+.container{
+    margin: auto;
+}
+
+#landing-page{
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    max-height: 790px;
+    overflow: hidden;
+}
+
+/* navigation bar */
+
+#landing-page nav #logo{
+    font-size: 32px;
+    color:#575DFD;
+    height: 120px;
+    line-height: 120px;
+}
+
+#landing-page nav #logo span{
+    color: #ECAC19;
+    text-transform: uppercase;
+}
+
+#landing-page nav {
+    height: 120px;
+}
+
+#landing-page .container{
+    height: 100vh;
+    max-height: 670px;
+    position: relative;
+}
+
+#landing-page nav .container{
+    height: 120px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#landing-page nav::after{
+    content: '';
+    height: 100vh;
+    max-height: 790px;
+    width: 50Vw;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: #575DFD;
+    z-index: -1;
+}
+
+#landing-page nav ul{
+    font-size: .8rem;
+    text-transform:capitalize ;
+    display: flex;
+    justify-content: space-between;
+}
+
+#landing-page nav ul li{
+    line-height: 120px;
+    margin: 0px 20px;
+}
+
+#landing-page nav ul li a{
+    color: white;
+}
+
+#landing-page nav ul .button a{
+    color:#575dfd;
+    background-color: white;
+    padding: 18px 26px ;
+    border-bottom-right-radius: 30px;
+}
+
+#landing-page nav #bar{
+    width: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    line-height: 120px;
+    display: none;
+}
+
+#landing-page #bar span{
+    width: 100%;
+    display: block;
+    height: 4px;
+    background-color: #ECAC19;
+    margin: 6px 0px;
+    border-radius: 4px;
+}
+
+#landing-page #bar span:nth-child(2){
+    width: 80%;
+    margin-left: 20%;
+}
+
+
+/*----------  hero landing  ----------*/
+
+
+#landing-page .container #sumary{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-15%,-50%);
+    text-transform: capitalize;
+}
+
+#landing-page .container #sumary h4{
+    font-size: 64px;
+    font-weight:500;
+    letter-spacing: 7%;
+    line-height: 110%;
+    margin: 20px auto;
+    color: #ECAC19;
+}
+
+#landing-page .container #sumary p{
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 7%;
+}
+
+#landing-page .container #sumary p span{
+    color: #575DFD;
+}
+
+#landing-page .container #sumary .icons{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+#landing-page .container #sumary .icons a{
+    color:#3d3b49;
+}
+
+#landing-page .container #sumary .icons i{
+    font-size: 60px;
+    padding: 10px;
+}
+
+#landing-page .container #image::after{
+       content: '';
+       position: absolute;
+       width: 1500px;
+       height: 300px;
+       transform: rotate(140deg);
+       background-color: aliceblue;
+       opacity: .3;
+       right: -750px;
+       top: -300px;
+       z-index: -1;
+       border-radius: 80px;
+}
+   
+#landing-page .container #image img{
+    height: 42rem;
+       position: absolute;
+       bottom: 0px;
+       left: 55%;
+       z-index: 9;
+}
+
+
+/*     about me    */
+
+#about-me{
+    width: 100%;
+    position: relative;
+} 
+
+#about-me h6, #services h6,#my-work h6,#contact h6{
+    font-size: 64px;
+    color: #575DFD;
+    text-align: center;
+    padding: 60px 0px 40px;
+    line-height: 120%;
+    letter-spacing: 7%;
+    font-weight: 100;
+    text-transform: capitalize;
+    color: #3d3b49;
+    z-index: 2;
+}
+
+#about-me {
+    margin: auto;
+    text-align: center;
+    font-size: 18px;   
+}
+
+
+#about-me p{
+    display: block;
+    margin: auto;
+    width: 50%;  
+}
+
+#about-me button{
+    color: white;
+    background-color: #575DFD;
+    border: none;
+    padding:14px 30px;
+    border-bottom-right-radius: 30px;
+    margin: 60px;
+}
+
+#about-me div hr{
+    border: none;
+    border-bottom:1px  #000000 dashed;
+    margin-bottom: 12px;
+    height: 0px;
+}
+
+#about-me .land-about {
+    position: absolute;
+    right: 0px;
+    top: -60px;
+    width: 150px;
+    height: 120px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+
+#about-me .detail {
+    background-color: white; 
+}
+
+/*   contacts   */
+#contact{
+    background-color: rgb(247, 247, 247);
+}
+
+#contact .container{
+    display: flex;
+    height:720px;
+    align-items: center;
+    overflow: visible;
+    
+}
+
+#contact .container h6{
+    text-align: center;
+    width: 50%;
+    position: relative;
+    color: #575DFD;
+}
+
+#contact .container h6::after{
+    content: '';
+    position: absolute;
+    background-color:#ffffff;
+    width:650px;
+    height:650px;
+    border-radius: 330px;
+    top: 50%;
+    left: -70px;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+#contact .container form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    z-index: 10;
+}
+
+#contact .container form input ,textarea{
+    padding: 18px 26px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    text-transform: capitalize;
+}
+
+textarea{
+    resize: none;
+}
+#contact .container form input:last-of-type{
+    width: 50%;
+}
+/*       works        */
+
+#my-work{
+    position: relative;
+}
+
+#my-work h6{
+    color: white;
+}
+
+#my-work::before{
+    content: '';
+    position: absolute;
+    background-color: #575DFD;
+    top: 0px;
+    width: 100%;
+    height: 350px;
+    border-top-left-radius: 300px;
+    z-index: -1;
+}
+
+#my-work::after{
+    content: '';
+    position: absolute;
+    background-color:#ECAC19;
+    top: 10px;
+    left: 20px;
+    width:120px;
+    height:120px;
+    border-radius: 60px;
+}
+
+#my-work .my-projects a{
+    width: minmax(240px,360px);
+    overflow: hidden;
+}
+
+#my-work .my-projects{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+    gap: 12px;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+#my-work img{
+    width: 100%;
+}
+
+#my-work ul{
+    display: flex;
+    justify-content: center;  
+    margin: 60px auto;
+
+}
+
+#my-work ul li{
+    margin: 0px 20px;
+    border-radius: 2px;
+}
+
+#my-work ul a {
+    padding: 16px 26px;
+    color: #575DFD;
+    background-color: #ffffff ;
+    border:1px solid #575DFD;
+    border-radius: 8px;
+}
+
+#my-work ul .active{
+    color: #ffffff;
+    background-color: #575DFD ;
+}
+
+#my-work hr{
+    border: none;
+    border-bottom:1px  #000000 dashed;
+    margin-bottom: 12px;
+    height: 0px;
+}
+
+/*    services  */
+
+#services{
+    position: relative;
+    background-color: #F5F5F5;
+    padding-bottom: 80px;
+    z-index: -10;
+}
+
+#services h6::before{
+    content: '';
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: -325px;
+    height: 600px;
+    width: 600px;
+    border-radius:500px;
+    background-color: #e3e3e3;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#services::before{
+    content: '';
+    position: absolute;
+    left: 400px;
+    top: 90px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #ECAC19;
+}
+
+#services::after{
+    content: '';
+    position: absolute;
+    right: 400px;
+    top: 90px;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: #ECAC19;
+}
+
+#services .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#services .cards .card{
+    text-align: center;
+}
+
+#services .cards .card img{
+   width: 320px;
+    
+
+}
+
+#services .cards .card h4{
+     color:#3d3b49;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: capitalize;
+   padding-top: 30px;
+}
+
+#services .cards .card p{
+    color: #9a9df9;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+/*       footer     */
+
+#footer::before {
+    content: '';
+    position: absolute;
+    background-color:#575DFD;
+    height:10px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+#footer{
+ position: relative;
+ padding: 40px;
+ text-align: center;
+}
+
+#footer .icons{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#footer .icons a{
+    color:#3d3b49;
+}
+
+#footer .icons i{
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+
+
+
+
+/*   media query  */
+
+@media (min-width:1401px) {
+   
+    .container{
+        width: 1370px;
+    }
+    
+}
+
+@media (max-width:1400px) {
+
+    .container{
+        width: 1170px;
+    }
+  
+    #landing-page nav #bar{
+        display: none;
+    }
+
+    #landing-page nav ul{
+        font-size: .9rem;
+    }
+
+    #my-work .my-projects{
+        grid-template-columns: repeat(5 , 1fr);
+        gap: 12px;
+    }
+}
+
+@media (max-width:1200px) {
+
+    #my-work .my-projects{
+        grid-template-columns: repeat(4 , 1fr);
+        gap: 12px;
+    }
+   
+    .container{
+        width: 970px;
+    }
+    
+    #landing-page nav ul{
+        font-size: .6rem;
+    }
+
+    #landing-page .container #image img{
+        
+        right: 200px;
+    }
+
+    #landing-page .container #image::after{
+        display: block;
+        right: -900px;
+        top: -280px;
+    }
+
+    #landing-page .container #sumary h4{
+        font-size: 48px;
+    }
+    
+    #landing-page .container #sumary p{
+        font-size: 40px;
+    }
+    
+    #contact .container{
+        display: flex;
+        flex-direction: column; 
+    }
+
+    #contact .container h6::after{
+        display: none;
+    }
+    #contact .container{
+        height: unset;
+        padding-bottom: 60px;
+        overflow: hidden;
+    }
+    #contact .container form input ,textarea{
+        width: 320px;
+  
+    }
+
+}
+
+@media (max-width:991px) {
+    .container{
+        width: 750px;
+        padding: 0px 8px;
+    }
+    #landing-page nav ul{
+        font-size: .6rem;
+    }
+
+    #my-work .my-projects{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+    }
+   
+    #logo{
+        font-size: 32px;
+    }
+
+    #landing-page .container #bar{
+       display: block;
+   }
+
+    #landing-page {
+       position: relative;
+    }
+    
+    #landing-page nav ul{
+        display: none;
+    }
+
+    #landing-page .container #sumary{
+        width: max-content;
+        z-index: 10;
+    }
+    
+    #landing-page .container #sumary h4{
+        font-size: 32px;
+    }
+    
+    #landing-page .container #sumary p{
+        font-size: 40px;
+        font-weight: 300;
+        letter-spacing: 7%;
+    }
+      
+   #landing-page .details #sumary .icons i{
+       font-size: 32px;
+       margin-right: 0px;
+   }
+
+   #landing-page .details h4{
+       font-size: 3px;
+       line-height: 1;
+   }
+
+    #landing-page #image {
+        background: none;
+        position: unset;
+        z-index: 2;
+        overflow: hidden;
+        background-color: #3d3b49;
+    }
+    
+    #landing-page nav::after{
+        display: none;
+    }
+
+    #landing-page .container #image img{
+        height: 37.5rem; 
+        left: 35%;
+    }
+
+    #landing-page .container #image::after{
+        width: 150px;
+        height: 100%;
+        transform:unset;
+        top: 72px;
+        right: 330px;
+        z-index: 9;
+        border-radius: 0px;
+        background-color: white;
+        opacity: 0.6;
+    }
+
+    #about-me p{
+        width: 100%;  
+    }
+
+    #services .cards{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 60px;
+    }
+    
+}
+
+@media (max-width:768px) {
+    .container{
+        width: 90%;
+        padding: 0px 14px;
+    }
+
+    #my-work .my-projects{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    #about-me h6, #services h6,#my-work h6,#contact h6{
+        font-size: 32px;
+        font-weight: 300;
+    }
+
+    #about-me p{
+        font-size: 16px;
+    }
+
+
+    #landing-page .container #sumary{
+        width: 100%;
+        padding: 0px;
+    }
+
+    #landing-page .container #sumary h4{
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    #landing-page .container #sumary p{
+        font-size: 32px;
+    }
+
+    #landing-page .container #image img{
+        display: none;
+    }
+    #landing-page .container #image::after{
+      display: none;
+    }
+    #about-me .land-about {
+       display: none;
+    }
+
+    #services h6::before{
+        display: none;
+    }
+    
+    #services::before{
+        display: none;
+    }
+    #services::after{
+        display: none;
+    }
+
+    
+    #about-me p{
+        width: 100%;  
+    }
+
+    #services .cards{
+        grid-template-columns: 1fr;
+    }
+
+    #my-work ul li{
+        margin: 0px 2px;
+        border-radius: 2px;
+    }
+
+    #my-work ul{
+        font-size: 14px;
+    }
+    
+    #my-work ul a {
+        padding: 12px 18px;
+        color: #575DFD;
+        background-color: #ffffff ;
+        border:1px solid #575DFD;
+        border-radius: 8px;
+    }
+    #my-work::after{
+        content: '';
+        position: absolute;
+        background-color:#ECAC19;
+        top: 50px;
+        left: 10px;
+        width:60px;
+        height:60px;
+        border-radius: 60px;
+    }
+    #my-work::before{
+
+        border-top-left-radius: 170px;
+        height: 250px;
+        
+    }
+}
